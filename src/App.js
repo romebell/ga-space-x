@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Company from './components/company/Company';
 import CapsuleUnitContainer from './components/capsules/CapsuleUnitContainer';
 import CoreUnitContainer from './components/cores/CoreUnitContainer';
+import CrewUnitContainer from './components/crews/CrewUnitContainer';
+
 /*{
 ceo: "Elon Musk"
 coo: "Gwynne Shotwell"
@@ -37,6 +39,8 @@ function App() {
       const { ceo, employees, name, valuation, vehicles } = data;
       setCompany({
         student: 'Tom Erickson: github.com/tommytoyou ',
+        superpower: 'Tenacious Optimism',
+        company_in_spotlight: 'SpaceX',
         ceo: ceo,
         employees: employees,
         name: name,
@@ -54,13 +58,16 @@ function App() {
           <br />
           <Link to='/capsule'> Capsule </Link>
           <br />
-          <Link to= '/core'> Core </Link>
+          <Link to='/core'> Core </Link>
+          <br />
+          <Link to='/crew'> Crew </Link>
         </nav>
           <h1>GA Space X</h1>
           <Company company={company}/>
           <Route exact path="/" render={(company) => <company {...company} />} />
           <Route path='/capsule' component={CapsuleUnitContainer} />
           <Route path='/core' component={CoreUnitContainer}/>
+          <Route path='/crew' component={CrewUnitContainer}/>
       </div>
     </Router>
   );
