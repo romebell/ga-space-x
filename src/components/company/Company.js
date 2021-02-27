@@ -1,16 +1,21 @@
+import './Company.css'; // same folder as company component
+
 
 const Company = (props) => {
     const {student, ceo, employees, name, valuation, vehicles} = props.company;
 
     return (
-        <>
-        <p> student: {student}</p>
-        <p> ceo: {ceo}</p>
-        <p> employees: {employees}</p>
-        <p> name: {name}</p>
-        <p> valuation: {valuation}</p>
-        <p> vehicles: {vehicles}</p>
-        </>
+<div className="company">
+            <ul>
+                <li>Student: {student}</li>
+                <li>Ceo: {ceo}</li>
+                <li>Employees: {employees}</li>
+                <li>Name: {name}</li>
+                <li>valuation: {valuation}</li>
+                <li>Vehicles: {vehicles}</li>
+            </ul>
+        </div>
+
     )
 }
 
