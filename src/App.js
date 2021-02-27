@@ -8,6 +8,7 @@ import Company from './components/company/Company';
 import CapsuleUnitContainer from './components/capsules/CapsuleUnitContainer';
 import CoreUnitContainer from './components/cores/CoreUnitContainer';
 import CrewUnitContainer from './components/crews/CrewUnitContainer';
+import DragonUnitContainer from './components/dragons/DragonUnitContainer';
 
 /*{
 ceo: "Elon Musk"
@@ -61,6 +62,8 @@ function App() {
           <Link to='/core'> Core </Link>
           <br />
           <Link to='/crew'> Crew </Link>
+          <br />
+          <Link to='/dragon'> Dragon </Link>
         </nav>
           <h1>GA Space X</h1>
           <Company company={company}/>
@@ -68,6 +71,7 @@ function App() {
           <Route path='/capsule' component={CapsuleUnitContainer} />
           <Route path='/core' component={CoreUnitContainer}/>
           <Route path='/crew' component={CrewUnitContainer}/>
+          <Route path='/dragon' component={DragonUnitContainer}/>
       </div>
     </Router>
   );
