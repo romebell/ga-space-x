@@ -1,0 +1,12 @@
+.capsules {
+    background: #eaeaea;
+    border: solid 5px blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 17%;
+    height: 200px;
+    margin-bottom: 1em;
+    transition: border-width 0.6s linear;
+  }
+  .capsules:hover { border-width: 10px; }

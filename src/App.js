@@ -1,7 +1,12 @@
 //imports
 import {useState, useEffect} from 'react'
 import axios from 'axios'
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
+
+//components
 import Company from './components/company/Company'
+import CapsuleUnitContainer from './components/capsules/CapsulesUnitContainer'
+import Capsule from './components/capsules/Capsule'
 
 function App() { //make this an async functional component
   // setting state of "company" object 
@@ -39,8 +44,15 @@ function App() { //make this an async functional component
   // console.log(companyData)
   return (
     <div>
-      <h1>G spAce x</h1>
-      <Company company={company}/>
+      <Router>
+        <nav>
+          <Link to='/'>Home</Link><br/>
+          <Link to='/capsules'>Capsules</Link>
+        </nav>
+        <h1>G spAce x</h1>
+          <Route exact path='/' render={()=> <Company company={company}/>} />
+          <Route path='/capsules' component={CapsuleUnitContainer}/>
+      </Router>
     </div>
   );
 }
