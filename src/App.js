@@ -9,6 +9,10 @@ import CapsuleUnitContainer from './components/capsules/CapsuleUnitContainer';
 import CoreUnitContainer from './components/cores/CoreUnitContainer';
 import CrewUnitContainer from './components/crews/CrewUnitContainer';
 import DragonUnitContainer from './components/dragons/DragonUnitContainer';
+import LandpadUnitContainer from './components/landpads/LandpadUnitContainer';
+
+
+
 
 /*{
 ceo: "Elon Musk"
@@ -64,6 +68,8 @@ function App() {
           <Link to='/crew'> Crew </Link>
           <br />
           <Link to='/dragon'> Dragon </Link>
+          <br />
+          <Link to='/landpad'> Landing Pads </Link>
         </nav>
           <h1>GA Space X</h1>
           <Company company={company}/>
@@ -72,6 +78,7 @@ function App() {
           <Route path='/core' component={CoreUnitContainer}/>
           <Route path='/crew' component={CrewUnitContainer}/>
           <Route path='/dragon' component={DragonUnitContainer}/>
+          <Route path='/landpad' component={LandpadUnitContainer}/>
       </div>
     </Router>
   );
