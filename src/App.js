@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 // components
 import Company from './components/company/Company';
 import CapsuleUnitContainer from './components/capsules/CapsuleUnitContainer';
-
+import CoreUnitContainer from './components/cores/CoreUnitContainer';
 /*{
 ceo: "Elon Musk"
 coo: "Gwynne Shotwell"
@@ -36,7 +36,7 @@ function App() {
       // destructuring
       const { ceo, employees, name, valuation, vehicles } = data;
       setCompany({
-        student: 'Tommy',
+        student: 'Tom Erickson: github.com/tommytoyou ',
         ceo: ceo,
         employees: employees,
         name: name,
@@ -48,17 +48,20 @@ function App() {
   }, [])
   return (
     <Router>
-    <div>
-    <nav>
-      <Link to='/'>Home</Link>
-      <br />
-      <Link to='/capsule'> Capsule</Link>
-    </nav>
-      <h1>GA Space X</h1>
-      <Route exact path="/" render={(company) => <company {...company} />} />
-      <Route path='/capsule' component={CapsuleUnitContainer} />
-      <Company company={company}/>
-    </div>
+      <div>
+        <nav>
+          <Link to='/'> Home </Link>
+          <br />
+          <Link to='/capsule'> Capsule </Link>
+          <br />
+          <Link to= '/core'> Core </Link>
+        </nav>
+          <h1>GA Space X</h1>
+          <Company company={company}/>
+          <Route exact path="/" render={(company) => <company {...company} />} />
+          <Route path='/capsule' component={CapsuleUnitContainer} />
+          <Route path='/core' component={CoreUnitContainer}/>
+      </div>
     </Router>
   );
 }
