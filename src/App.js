@@ -1,6 +1,7 @@
 // imports
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import Company from './components/Company'
 /*{
 ceo: "Elon Musk"
 coo: "Gwynne Shotwell"
@@ -31,7 +32,7 @@ function App() {
       // destructuring
       const { ceo, employees, name, valuation, vehicles } = data;
       setCompany({
-        student: 'Rome Bell',
+        student: 'Mocha Brown',
         ceo: ceo,
         employees: employees,
         name: name,
@@ -42,9 +43,11 @@ function App() {
     }
     fetchCompany();
   }, [])
+  console.log(company)
   return (
     <div>
       <h1>GA Space X</h1>
+      <Company company={company}/>
     </div>
   );
 }
