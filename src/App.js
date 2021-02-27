@@ -10,7 +10,7 @@ import CoreUnitContainer from './components/cores/CoreUnitContainer';
 import CrewUnitContainer from './components/crews/CrewUnitContainer';
 import DragonUnitContainer from './components/dragons/DragonUnitContainer';
 import LandpadUnitContainer from './components/landpads/LandpadUnitContainer';
-
+import LaunchUnitContainer from './components/launches/LaunchUnitContainer';
 
 
 
@@ -43,7 +43,7 @@ function App() {
       // destructuring
       const { ceo, employees, name, valuation, vehicles } = data;
       setCompany({
-        student: 'Tom Erickson: github.com/tommytoyou ',
+        student: 'Tom Erickson: @github.com/tommytoyou ',
         superpower: 'Tenacious Optimism',
         company_in_spotlight: 'SpaceX',
         ceo: ceo,
@@ -70,6 +70,8 @@ function App() {
           <Link to='/dragon'> Dragon </Link>
           <br />
           <Link to='/landpad'> Landing Pads </Link>
+          <br />
+          <Link to='/launch'> Launches </Link>
         </nav>
           <h1>GA Space X</h1>
           <Company company={company}/>
@@ -79,6 +81,7 @@ function App() {
           <Route path='/crew' component={CrewUnitContainer}/>
           <Route path='/dragon' component={DragonUnitContainer}/>
           <Route path='/landpad' component={LandpadUnitContainer}/>
+          <Route path='/launch' component={LaunchUnitContainer}/>
       </div>
     </Router>
   );
