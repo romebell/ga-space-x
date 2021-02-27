@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 // components
 import Company from './components/company/Company';
-import CapsuleUnitContainer from './components/capsule/CapsuleUnitContainer';
+import CapsuleUnitContainer from './components/capsules/CapsuleUnitContainer';
 
 /*{
 ceo: "Elon Musk"
@@ -51,11 +51,12 @@ function App() {
     <div>
     <nav>
       <Link to='/'>Home</Link>
-      <Link to ='/capsules'></Link>
+      <br />
+      <Link to='/capsule'> Capsule</Link>
     </nav>
       <h1>GA Space X</h1>
       <Route exact path="/" render={(company) => <company {...company} />} />
-      <Route path='/capsules' component={CapsuleUnitContainer} />
+      <Route path='/capsule' component={CapsuleUnitContainer} />
       <Company company={company}/>
     </div>
     </Router>
