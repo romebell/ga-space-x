@@ -11,7 +11,7 @@ import CrewUnitContainer from './components/crews/CrewUnitContainer';
 import DragonUnitContainer from './components/dragons/DragonUnitContainer';
 import LandpadUnitContainer from './components/landpads/LandpadUnitContainer';
 import LaunchUnitContainer from './components/launches/LaunchUnitContainer';
-
+import LaunchpadUnitContainer from './components/launchpads/LaunchpadUnitContainer';
 
 
 /*{
@@ -72,6 +72,8 @@ function App() {
           <Link to='/landpad'> Landing Pads </Link>
           <br />
           <Link to='/launch'> Launches </Link>
+          <br />
+          <Link to='/launchpad'> Launch Pads </Link>
         </nav>
           <h1>GA Space X</h1>
           <Company company={company}/>
@@ -82,6 +84,7 @@ function App() {
           <Route path='/dragon' component={DragonUnitContainer}/>
           <Route path='/landpad' component={LandpadUnitContainer}/>
           <Route path='/launch' component={LaunchUnitContainer}/>
+          <Route path='/launchpad' component={LaunchpadUnitContainer}/>
       </div>
     </Router>
   );
