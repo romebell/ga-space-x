@@ -16,6 +16,7 @@ import PayloadUnitContainer from './components/payloads/PayloadUnitContainer';
 import RoadsterUnitContainer from './components/roadsters/RoadsterUnitContainer';
 import RocketUnitContainer from './components/rockets/RocketUnitContainer';
 import ShipUnitContainer from './components/ships/ShipUnitContainer';
+import StarlinkUnitContainer from './components/starlinks/StarlinkUnitContainer';
 
 
 /*{
@@ -86,6 +87,8 @@ function App() {
           <Link to='/rocket'> Rockets </Link>
           <br />
           <Link to='/ship'> Ship </Link>
+          <br />
+          <Link to='/starlink'> Starlink </Link>
         </nav>
           <h1>GA Space X</h1>
           <Company company={company}/>
@@ -101,6 +104,7 @@ function App() {
           <Route path='/roadster' component={RoadsterUnitContainer}/>
           <Route path='/rocket' component={RocketUnitContainer}/>
           <Route path='/ship' component={ShipUnitContainer}/>
+          <Route path='/starlink' component={StarlinkUnitContainer}/>
       </div>
     </Router>
   );
