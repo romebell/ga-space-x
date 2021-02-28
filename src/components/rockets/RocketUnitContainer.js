@@ -7,7 +7,7 @@ const RocketUnitContainer = () => {
         
         useEffect(() => {
             const fetchRockets = async () => {
-              const response = await axios.get('https://api.spacexdata.com/v4/rockets');
+              const response = await axios.get('https://api.spacexdata.com/v4/rockets/:id');
               const data = response.data; //array
 
               setRockets(data)

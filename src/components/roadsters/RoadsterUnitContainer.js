@@ -7,7 +7,7 @@ const RoadsterUnitContainer = () => {
         
         useEffect(() => {
             const fetchRoadsters = async () => {
-              const response = await axios.get('https://api.spacexdata.com/v4/roadster[1]');
+              const response = await axios.get('https://api.spacexdata.com/v4/roadsters');
               const data = response.data; //array
 
               setRoadsters(data)

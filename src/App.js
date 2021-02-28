@@ -104,7 +104,7 @@ function App() {
           <Route path='/launch' component={LaunchUnitContainer}/>
           <Route path='/launchpad' component={LaunchpadUnitContainer}/>
           <Route path='/payload' component={PayloadUnitContainer}/>
-          <Route path='/roadster' component={RoadsterUnitContainer}/>
+          <Route excat path='/roadster' component={RoadsterUnitContainer}/>
           <Route path='/rocket' component={RocketUnitContainer}/>
           <Route path='/ship' component={ShipUnitContainer}/>
           <Route path='/starlink' component={StarlinkUnitContainer}/>
