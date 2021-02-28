@@ -7,7 +7,7 @@ const HistoryUnitContainer = () => {
         
         useEffect(() => {
             const fetchHistories = async () => {
-              const response = await axios.get('https://api.spacexdata.com/v4/history');
+              const response = await axios.get('https://api.spacexdata.com/v4/history/:"title": "SpaceX successfully launches humans to ISS"');
               const data = response.data; //array
 
               setHistories(data)

@@ -1,4 +1,4 @@
-/* .starlinks {
+.starlinks {
     background: #eaeaea;
     border: solid 5px blue;
     display: flex;
@@ -9,4 +9,4 @@
     margin-bottom: 1em;
     transition: border-width 0.6s linear;
   }
-  .starlinks:hover { border-width: 10px; } */
+  .starlinks:hover { border-width: 10px; }
