@@ -1,7 +1,11 @@
 // imports
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
+
+//
 import Company from './components/company/Company'
+import CapsuleUnitContainer from './components/capsule/CapsuleUnitContainer'
 
 /*{
 ceo: "Elon Musk"
@@ -45,10 +49,21 @@ function App() {
     fetchCompany();
   }, [])
   return (
-    <div>
-      <h1>GA Space X</h1>
-      <Company company={company}/>
-    </div>
+    // <Router>
+
+      <div>
+        <nav>
+          <Link to='/'>Home</Link>
+          <Link to='/capsules'>capsules</Link>
+        </nav>
+        <h1>GA Space X</h1>
+        <Route exact path='/' render={(company) => <Company company={company} />} />
+        <Route path='/capsules' component={CapsuleUnitContainer} />
+
+         
+
+      </div>
+    // </Router>
   );
 }
 export default App;
