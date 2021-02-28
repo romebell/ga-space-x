@@ -10,7 +10,7 @@ const Company = (props) => {
                 <li>Student: {student}</li>
                 <li>Superpower: {superpower}</li>
                 <li>Company In Spotlight: {company_in_spotlight}</li>
-                <li>Ceo: {ceo}</li>
+                <li>CEO: {ceo}</li>
                 <li>Employees: {employees}</li>
                 <li>Name: {name}</li>
                 <li>valuation: {valuation}</li>
