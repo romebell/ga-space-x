@@ -1,7 +1,7 @@
 import './Dragon.css'
 
 const Dragon = (props) => {
-    const { name, type, crew_capacity, orbit_duration_yr, dry_mass_kg} = props.crew;
+    const { name, type, crew_capacity, orbit_duration_yr, dry_mass_kg} = props.dragon;
 
     return (
         <div className="crews">

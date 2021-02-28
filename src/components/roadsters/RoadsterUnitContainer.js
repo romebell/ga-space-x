@@ -7,7 +7,7 @@ const RoadsterUnitContainer = () => {
         
         useEffect(() => {
             const fetchRoadsters = async () => {
-              const response = await axios.get('https://api.spacexdata.com/v4/roadster');
+              const response = await axios.get('https://api.spacexdata.com/v4/roadster[1]');
               const data = response.data; //array
 
               setRoadsters(data)
@@ -18,7 +18,7 @@ const RoadsterUnitContainer = () => {
         console.log(roadsters)
     
         const roadsterList = roadsters.map((roadster, index) => {
-            return <Roadster roadster={Roadster} key={index} />
+            return <Roadster roadster={roadster} key={index} />
         });
     
         return (
