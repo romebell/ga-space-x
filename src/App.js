@@ -12,6 +12,7 @@ import DragonUnitContainer from './components/dragons/DragonUnitContainer';
 import LandpadUnitContainer from './components/landpads/LandpadUnitContainer';
 import LaunchUnitContainer from './components/launches/LaunchUnitContainer';
 import LaunchpadUnitContainer from './components/launchpads/LaunchpadUnitContainer';
+import PayloadUnitContainer from './components/payloads/PayloadUnitContainer';
 
 
 /*{
@@ -74,6 +75,8 @@ function App() {
           <Link to='/launch'> Launches </Link>
           <br />
           <Link to='/launchpad'> Launch Pads </Link>
+          <br />
+          <Link to='/payload'> Payloads </Link>
         </nav>
           <h1>GA Space X</h1>
           <Company company={company}/>
@@ -85,6 +88,7 @@ function App() {
           <Route path='/landpad' component={LandpadUnitContainer}/>
           <Route path='/launch' component={LaunchUnitContainer}/>
           <Route path='/launchpad' component={LaunchpadUnitContainer}/>
+          <Route path='/payload' component={PayloadUnitContainer}/>
       </div>
     </Router>
   );
