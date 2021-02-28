@@ -11,7 +11,7 @@ const Roadster = (props) => {
                 <li>Speed KPH: {speed_kph}</li>
                 <li>Distance From Earth (Km): {earth_distance_km}</li>
                 <li>Distance From Mars (Km): {mars_distance_km}</li>
-                <li>Details: {details}</li>
+                <li>Specifics: {details}</li>
             </ul>
         </div>
     )

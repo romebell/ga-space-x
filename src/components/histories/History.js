@@ -8,7 +8,7 @@
 //             <ul>
 //                 <li>Title: {title}</li>
 //                 <li>Date: {event_date_utc}</li>
-//                 <li>Details: {details}</li>
+//                 <li>Specifics: {details}</li>
 //             </ul>
 //         </div>
 //     )

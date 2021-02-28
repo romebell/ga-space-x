@@ -8,9 +8,9 @@ const Payload = (props) => {
             <ul>
                 <li>Name: {name}</li>
                 <li>type: {type}</li>
-                <li>Nationalities: {nationalities}</li>
-                <li>Customers: {customers}</li>
-                <li>Manufacturers: {manufacturers}</li>
+                <li>Nationality: {nationalities}</li>
+                <li>Customer: {customers}</li>
+                <li>Manufacturer: {manufacturers}</li>
             </ul>
         </div>
     )
