@@ -24,6 +24,7 @@ valuation: 52000000000
 vehicles: 3
 }
 */
+
 function App() {
   // state
   const [company, setCompany] = useState({});
