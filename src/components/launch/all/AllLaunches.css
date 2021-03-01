@@ -1,14 +1,14 @@
-.company {
+.AllLaunches {
   background: #eaeaea;
-  border: solid 5px grey;
+  border: solid 5px orange;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-basis: 17%;
-  height: 200px;
+  height: fit-content;
   margin-bottom: 1em;
   transition: border-width 0.6s linear;
 }
-.company:hover {
+.AllLaunches:hover {
   border-width: 10px;
 }

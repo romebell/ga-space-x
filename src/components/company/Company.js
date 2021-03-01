@@ -12,6 +12,7 @@ const Company = (props) => {
                 <li>Valuation: {valuation}</li>
                 <li>Vehicles: {vehicles}</li>
             </ul>
+            
         </div>
     )
 }

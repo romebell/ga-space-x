@@ -1,6 +1,6 @@
-.company {
+.core {
   background: #eaeaea;
-  border: solid 5px grey;
+  border: solid 5px black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,6 +9,6 @@
   margin-bottom: 1em;
   transition: border-width 0.6s linear;
 }
-.company:hover {
+.core:hover {
   border-width: 10px;
 }
