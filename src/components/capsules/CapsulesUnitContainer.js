@@ -27,6 +27,7 @@ const CapsuleUnitContainer = () =>{
     
     return(
         <div>
+            <h2>Capsule Data</h2>
             {capsuleList}
         </div>
     )
