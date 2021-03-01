@@ -4,6 +4,9 @@ import './Capsule.css'
 
 const Capsule = (props) => {
     const { water_landings, last_update, serial, type } = props.capsule;
+
+
+
     return (
         <div>
             <ul>

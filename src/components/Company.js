@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Company.css'
+// import '../Company.css'
 
 const Company = (props) => {
     const { student, ceo, employees, name, valuation, vehicles } = props.company
