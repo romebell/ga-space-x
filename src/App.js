@@ -5,8 +5,8 @@ import Company from './components/Company'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import CapsuleUnitContainer from './components/capsules/CapsuleUnitContainer'
 import Core from './components/Core'
-// import Crew from './components/Crew'
-// import Dragon from './components/Dragon'
+import Crew from './components/Crew'
+import Dragon from './components/Dragon'
 // import Fairing from './components/Fairing'
 // import History from './components/History'
 // import Landpad from './components/Landpad'
@@ -48,15 +48,17 @@ function App() {
           <Link to='/'>Home</Link>
           <Link to='/capsules'>Capsules</Link>
           <Link to='/core'>Core</Link>
+          <Link to='/crew'>Crew</Link>
+          <Link to='/dragon'>Dragon</Link>
         </nav>
         <h1>GA Space X</h1>
         <Route exact path='/' render={() => <Company company={company} />} />
         <Route path='/capsules' component={CapsuleUnitContainer} />
         {/* <Route path='/capsules/:id' component={<CapsuleUnitContainer />}/> */}
         <Route path='/core' component={Core} />
-        {/* <Route path='/crew' component={Crew} />
-        <Route path='/dragon' component={} />
-        <Route path='/fairing' component={} />
+        <Route path='/crew' component={Crew} />
+        <Route path='/dragon' component={Dragon} />
+        {/* <Route path='/fairing' component={} />
         <Route path='/history' component={} />
         <Route path='/landpad' component={} />
         <Route path='/payload' component={} />
